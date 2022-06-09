@@ -31,14 +31,14 @@
       function genPaymentIntent() {
 	  return new Promise((resolve, reject)=> {
 resolve({
-        "id": "AzyziWT8FsxD0l6Vs1fY9s9hQxoRzEnVYsQ24jPwyymxY8Xcd",
+        "id": "169ljbT8G0whix1rTy244aXkH8CcdhAC0Lk4RXFiRR5m453xV",
         "status": "inited",
         "amount": 900,
         "gateway_account_id": "gw_AzZha3T7xTk6uEk",
-        "expires_at": 1654772436,
+        "expires_at": 1654774341,
         "payment_method_type": "card",
-        "created_at": 1654770636,
-        "modified_at": 1654770636,
+        "created_at": 1654772541,
+        "modified_at": 1654772541,
         "object": "payment_intent",
         "currency_code": "USD",
         "gateway": "chargebee"
@@ -180,6 +180,9 @@ resolve({
               value: 900,
               currency: "USD",
           },
+		  authenticationData: {
+			attemptAuthentication: never
+		  },
           onAdditionalDetails: handleOnAdditionalDetails, // Your function for handling onAdditionalDetails event
       };
       
@@ -224,7 +227,7 @@ resolve({
 						  payment_info.card = {
       firstName: "First Name",
       lastName: "Last Name",
-      number: "4199350000000002",
+      number: "4917610000000000",
       cvv: "737",
       expiryMonth: "03",
       expiryYear: "2030"
