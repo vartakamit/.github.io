@@ -29,6 +29,22 @@
     
     <script>
       function genPaymentIntent() {
+	  return new Promise(()=> {
+return {
+        "id": "AzyzYtT89pHpF4EpsPvhnYgyHbUYHETQcd10SYbH9gDJPcu7iIX",
+        "status": "inited",
+        "amount": 5000,
+        "gateway_account_id": "gw_AzZha3T7xTk6uEk",
+        "expires_at": 1654682904,
+        "payment_method_type": "card",
+        "created_at": 1654681104,
+        "modified_at": 1654681104,
+        "object": "payment_intent",
+        "currency_code": "USD",
+        "gateway": "chargebee"
+    } ;
+            
+        })
           // This function should return a payment intent generated
           // using the Create a Payment Intent API.
           // Returned example:
