@@ -31,14 +31,14 @@
       function genPaymentIntent() {
 	  return new Promise((resolve, reject)=> {
 resolve({
-        "id": "AzyzYtT89pHpF4EpsPvhnYgyHbUYHETQcd10SYbH9gDJPcu7iIX",
+        "id": "AzyziWT8FU8mmTtXwOcsIceQdtmb5ag318IgzGIi6zDdh72G",
         "status": "inited",
-        "amount": 5000,
+        "amount": 9,
         "gateway_account_id": "gw_AzZha3T7xTk6uEk",
-        "expires_at": 1654682904,
+        "expires_at": 1654766523,
         "payment_method_type": "card",
-        "created_at": 1654681104,
-        "modified_at": 1654681104,
+        "created_at": 1654764723,
+        "modified_at": 1654764723,
         "object": "payment_intent",
         "currency_code": "USD",
         "gateway": "chargebee"
@@ -192,7 +192,7 @@ resolve({
           
           let chargebeeInstance = Chargebee.init({
            	  site: "amolcsod-test",
-              publishableKey: "test_vTsuZVMxPyooUBycdtcdOIcdyCtVHpwScd1cu"
+              publishableKey: "test_2aKlAF5cuMvrkVERcqRgTkc5WuCtoFxfD"
           });
           // You can access the above created instance anywhere using the following code
           chargebeeInstance = Chargebee.getInstance();
