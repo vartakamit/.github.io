@@ -31,14 +31,14 @@
       function genPaymentIntent() {
 	  return new Promise((resolve, reject)=> {
 resolve({
-        "id": "AzyziWT8FU8mmTtXwOcsIceQdtmb5ag318IgzGIi6zDdh72G",
+        "id": "AzqMHuT8FgwmvctMITMHJlM4AazXVTaBCT1CY9n6f66Zcvqs",
         "status": "inited",
         "amount": 9,
         "gateway_account_id": "gw_AzZha3T7xTk6uEk",
-        "expires_at": 1654766523,
+        "expires_at": 1654769575,
         "payment_method_type": "card",
-        "created_at": 1654764723,
-        "modified_at": 1654764723,
+        "created_at": 1654767775,
+        "modified_at": 1654767775,
         "object": "payment_intent",
         "currency_code": "USD",
         "gateway": "chargebee"
@@ -177,7 +177,7 @@ resolve({
           onSubmit: handleChargebeeFlow,
           amount: {
               // Optional. Used to display the amount in the Pay Button.
-              value: 900,
+              value: 9,
               currency: "USD",
           },
           onAdditionalDetails: handleOnAdditionalDetails, // Your function for handling onAdditionalDetails event
