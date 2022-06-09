@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Adyen Web Components with Chargebee - Test</title>
+    <title>Adyen Web Components with Chargebee</title>
     
     <script
       src="https://checkoutshopper-test.adyen.com/checkoutshopper/sdk/4.7.3/adyen.js"
@@ -154,7 +154,7 @@
 	    const configuration = {
           locale: "en_US", // The shopper's locale. For a list of supported locales, see https://docs.adyen.com/online-payments/components-web/localization-components.
           environment: "test", // When you're ready to accept live payments, change the value to one of our live environments https://docs.adyen.com/online-payments/components-web#testing-your-integration.
-          clientKey: "test_EHRZX6DGR5FYZIXOCBWMWLBV3UMZNQHN", // Your client key. To find out how to generate one, see https://docs.adyen.com/development-resources/client-side-authentication. Web Components versions before 3.10.1 use originKey instead of clientKey.
+          clientKey: "test_FK43QKI4KBAMNDMHJ2V3GULAIE4FFVZO", // Your client key. To find out how to generate one, see https://docs.adyen.com/development-resources/client-side-authentication. Web Components versions before 3.10.1 use originKey instead of clientKey.
           paymentMethodsResponse: paymentMethodsResponse, // The payment methods response returned in step 1.
           onChange: handleOnChange, // Your function for handling onChange event
           showPayButton: true,
@@ -175,8 +175,8 @@
       function handleChargebeeFlow(state, dropin) {
           
           let chargebeeInstance = Chargebee.init({
-              site: "acme-test",
-              publishableKey: "test__"
+           	  site: "amolcsod-test",
+              publishableKey: "test_vTsuZVMxPyooUBycdtcdOIcdyCtVHpwScd1cu"
           });
           // You can access the above created instance anywhere using the following code
           chargebeeInstance = Chargebee.getInstance();
