@@ -31,14 +31,14 @@
       function genPaymentIntent() {
 	  return new Promise(()=> {
 return {
-        "id": "AzyzYtT89pHpF4EpsPvhnYgyHbUYHETQcd10SYbH9gDJPcu7iIX",
+         "id": "169ljbT8FAKQAM1mhC66eZgiBYNoLAIUbP9uMvoBYDdcd1LQi",
         "status": "inited",
         "amount": 5000,
         "gateway_account_id": "gw_AzZha3T7xTk6uEk",
-        "expires_at": 1654682904,
+        "expires_at": 1654761801,
         "payment_method_type": "card",
-        "created_at": 1654681104,
-        "modified_at": 1654681104,
+        "created_at": 1654760001,
+        "modified_at": 1654760001,
         "object": "payment_intent",
         "currency_code": "USD",
         "gateway": "chargebee"
@@ -206,9 +206,7 @@ return {
 
               .then((threeDSHandler) => {
                   genPaymentIntent()
-                      .then((response) => response.text())
-                      .then((data) => JSON.parse(data).payment_intent)
-                      .then((response) => {
+                       .then((response) => {
                           console.log("Generated Payment Intent");
                           console.log(response);
 
