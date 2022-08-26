@@ -19,7 +19,7 @@
     
     <br />
     
-    <script  src = "https://js.chargebee.com/v2/chargebee.js" data-cb-site = "amolcsod-test" > </script>
+    <script  src = "https://js.chargebee.com/v2/chargebee.js" data-cb-site = "gdeshmukhcsod-test" > </script>
     
   </head>
 
@@ -31,14 +31,14 @@
       function genPaymentIntent() {
 	  return new Promise((resolve, reject)=> {
 resolve({
-        "id": "6oZmLT8tu1jAAb9Z6YEFeqkS3MEXktjXKOw7NmTIz0wpVIS",
+        "id": "16CIZ7TFaUmzH1ckQ0cugcoBoQcuTHemig17PnUY8Xz1PBhTqHj",
         "status": "inited",
         "amount": 900,
-        "gateway_account_id": "gw_169lteT7xsfoMRlS",
-        "expires_at": 1655363746,
+        "gateway_account_id": "gw_169lmYTFVCXHrrB",
+        "expires_at": 1661489910,
         "payment_method_type": "card",
-        "created_at": 1655361946,
-        "modified_at": 1655361946,
+        "created_at": 1661488110,
+        "modified_at": 1661488110,
         "object": "payment_intent",
         "currency_code": "USD",
         "gateway": "adyen"
@@ -194,8 +194,8 @@ resolve({
       function handleChargebeeFlow(state, dropin) {
           
           let chargebeeInstance = Chargebee.init({
-           	  site: "amolcsod-test",
-              publishableKey: "test_2aKlAF5cuMvrkVERcqRgTkc5WuCtoFxfD"
+           	  site: "gdeshmukhcsod-test",
+              publishableKey: "test_KFuxPQ9cdHBen5Dm1K0hAlDc8TxBXMO4K"
           });
           // You can access the above created instance anywhere using the following code
           chargebeeInstance = Chargebee.getInstance();
